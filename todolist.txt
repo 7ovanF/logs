@@ -10,6 +10,7 @@ LINUX TODO:
 -choose terminal, history (maybe i should keep using no history) (for now)
 -save power, conf tlp
 -learn wifi, wpa wpsk smth smth
+-if i wanna switch to hyprland, add a battery conservation switch on bar!!:D
 
 
 Doing rn:
