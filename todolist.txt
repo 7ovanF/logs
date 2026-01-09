@@ -1,0 +1,17 @@
+LINUX TODO:
+-set key shortcut > DONE
+-uninstall unneeded, then update apps
+-install&setup apps
+-make terminal autocomplete case-insensitive (also, it sometimes doesnt autocomplete options)
+-make alt tab list multiple instances
+-clipboard history
+-clipboard on vim
+-distrobox kali
+-choose terminal, history (maybe i should keep using no history) (for now)
+-save power, conf tlp
+-learn wifi, wpa wpsk smth smth
+
+
+Doing rn:
+-learn vim
+-ctfs
