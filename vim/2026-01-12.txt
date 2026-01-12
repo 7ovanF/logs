@@ -1,0 +1,39 @@
+Continuation of vimtutor
+
+CHPT 5
+- :![command] does an external command (any, such as ls)
+- :w [filename] writes to that file even if it doesnt exist
+  + you can write into a different folder as long as it exists
+  + you can write only from a certain range
+
+CHPT 6
+Why so many basics here
+- R (capital) [replace multiple] enters REPLACE MODE (kinda like accidentally pressing insert)
+- y and p - yank
+- Searching options (rules, use :set)
+  -> ic (ignore case), \c for only one time, set noic to revert
+  -> hls (highlight search) highlight
+  -> is (includes(inclusive?) search) 
+
+CHPT 7
+- HELP PAGE
+  pretty helpful actually
+  :help or f1 to trigger.
+  u can :help [button/combination] to find out about it 
+  or, :help insert-index, :help user-manual
++ When multiple files are open in vim, u can ctrl W to toggle between them
+
+- Ctrl-D to see (:) command completions, then TAB to choose
+
+END OF VIMTUTOR
+
+
+
+
+
+
+
+
+
+
+(part 1)

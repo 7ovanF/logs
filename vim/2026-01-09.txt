@@ -1,0 +1,56 @@
+Did vimtutor. Learned:
+
+**NOTE** do :set relativenumber (+ number, if want show actual line number for current line)
+
+CHPT 1
+-hjkl, :q :qw :w :q!, a, i, A, I
+-x to delete curr char
+
+
+CHPT 2
+-IMPORTANT:
+ operator [number] motion
+ operator: like d (delete)
+ [number]: optional, how many repetition
+ motion: what do. (ex w, e, $ (end of line))
+ motion ends the macro.
+ if no operator, just [number] motion: repeat motion [n] times
+
+-d (delete:operator) actually cuts, not just simple delete
+ dd is special to delete line
+-0 (start of line:motion)
+-$ (end of line:motion)
+-u (undo)
+-U (undo all changes on line)
+-ctrl+r (redo)
+
+
+CHPT 3
+-p (put/paste) put yanked or prevsly deleted.
+-r[x] (replace) replace selected with letter x
+-c (change:operator)
+ cc: change wholeline
+
+
+CHPT 4: Advanced motions (and some commands)
+-G (go:motion)
+ just G will take to file end
+ gg will take to file beginning
+ [n]G will take to line n
+++ ctrl+G will give line data (how many lines in file, and where u are rn (if ruler off))
+
+-/[phrase] (search:command) (? will just go backwards)
+ n to go to next
+ N to go to previous
+
+-ctrl+o (motion) to go back before big movements like G or search
+-ctrl+i (motion) goes forward
+
+-% to go to brackets, closing and opening (need more research)
+
+-:s/old/new/g (substitute:command)
+ replace old string with new
+ g (global) to substitute all in line
+ c (confirm) to ask confirmation before changing (y/n/smth smth)
+ :#,#s/old/new/.. to replace in lines from # to # 
+ :%s/old/new/.. to replace in whole file
