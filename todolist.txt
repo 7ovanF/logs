@@ -1,21 +1,15 @@
 memory dump
--make conserve 0 on launhc
--autolaunch input remapper
--how to access gnome settings from here (and configure conservation)
- -> notes
- v THIS if restart resets: change gnome
- x if not: can modify file directly
 -fix terminal theme
 -dont insta shutdown on power button, just ask
 
 LINUX TODO:
--set key shortcut > DONE
 -uninstall unneeded, then update apps
 -install&setup apps
--distrobox kali
+-distrobox kali > DONE; just needs setup
 -save power, conf tlp
 -learn wifi, wpa wpsk smth smth
 -if i wanna switch to hyprland, add a battery conservation switch on bar!!:D
+-optimize startup (but systemd-analyze counts the time i take to input words)
 
 
 Doing rn:

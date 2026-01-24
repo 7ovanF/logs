@@ -1,0 +1,12 @@
+learned more about partitioning with parted and having to format with mkfs.ext4 etc (different command for each type)
+and probably learned more before.
+didnt log them so...
+
+
+
+learned about PAM (Pluggable Authentication Modules)
+does password things.
+
+learned it while configuring ly (a display manager/login manager)
+
+explanation later

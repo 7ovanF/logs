@@ -1,0 +1,6 @@
+Overthewire! repeated stages.
+
+Stage 13:
+-to 'download' file from ssh target: use scp (simple) or rsync (big files)
+ ssh user@target:path/to/file path/on/local [options]
+ -R for recursive from folder
