@@ -9,4 +9,39 @@ does password things.
 
 learned it while configuring ly (a display manager/login manager)
 
-explanation later
+PAM is a Linux library (libpam; part of glibc. deeply integrated into the system) which applications or services delegates the authentication process to by calling functions provided in the PAM library, which will execute *security modules based on the configurations in /etc/pam.d/.
+*security modules: think as actions like "check if the password is 8 characters or more"
+This means PAM provides a centralized (not spread out across the filesystem) way to control & audit every authentication process.
+other than that, the existence of PAM means that applications can not arbitrarily implement their own authentication process and risk security. by having PAM, a dedicated authentication library, authentication across different services are as consistent as desired.
+
+PAM's Four Core Functions:
+1. Authentication (credential validation)
+2. Password (password quality checks)
+3. Account (checks account status, permissions, restrictions)
+4. Session (manages user environment)
+
+---not done
+in /etc/pam.d is contained configuration files for a certain service. in these configs, we can declare what authentication steps will be made when that service requests an authentication.
+
+Stack: list of things/authentications done
+1st field: Defines which aspect of the core functions it is implementing
+auth, password, account, session
+2nd field: Defines behavior of the authentication upon different cases
+required: if it fails, the final status of the PAM stack is failed but will still run the rest of the stack
+requisite: if it fails the rest of the stack wont be run, and it will fail
+optional: if it fails then just continue on. doesnt affect the final status(fail or success) use case, can be used to log
+sufficient: if it fails, if the other required modules in that stack succeeded, final status is still a success. if theres a failed required, final status is failed.
+3rd field: the module to execute (analogy: this is a function that receives the password as parameter, outputs based on parameter) that returns a success/fail
+These modules are:
+-pwquality (checks password quality)
+-pwhistory (looks at the history to __)
+-unix (standard auth)
+-faillock (lock out an account)
+-faildelay (fail upon certain time passed)
+4th field: arguments
+___
+
+there are recommended configurations that are defined in DISA STIG and CIS Benchmarks
+
+PAM 
++ you can @include [other_config].
