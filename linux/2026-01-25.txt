@@ -1,0 +1,3 @@
+Tried to set up clevis to auto-unlock luks encryption, so i dont have to enter password everytime
+
+my root is encrypted using luks. smth to keep in mind if i set up a new device
