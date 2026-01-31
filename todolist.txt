@@ -1,9 +1,6 @@
-memory dump
--fix terminal theme
 -dont insta shutdown on power button, just ask
 
 LINUX TODO:
--uninstall unneeded, then update apps
 -install&setup apps
 -distrobox kali > DONE; just needs setup
 -save power, conf tlp
@@ -11,7 +8,11 @@ LINUX TODO:
 -if i wanna switch to hyprland, add a battery conservation switch on bar!!:D
 -optimize startup (but systemd-analyze counts the time i take to input words)
 
-
-Doing rn:
--learn vim
--ctfs
+Migration List:
+- Browsers
+  Firefox, Floorp (gradient blue and red), + lynx
+- Work
+  flatpak codium
++steam
++inputremapper
++btop
