@@ -1,12 +1,16 @@
--dont insta shutdown on power button, just ask
-
 LINUX TODO:
--install&setup apps
--distrobox kali > DONE; just needs setup
--save power, conf tlp
--learn wifi, wpa wpsk smth smth
+-dont insta shutdown on power button, just ask
+-save power, conf tlp/power-d-daemon
 -if i wanna switch to hyprland, add a battery conservation switch on bar!!:D
 -optimize startup (but systemd-analyze counts the time i take to input words)
+
+THINGS I CAN LEARN:
+conceptual
+- transistors microchips
+- wireless networks, wpa wpsk, wlan...
+practical
+- networking architecture, nmcli nmtui iwd wpa_supplicant systemd_resolved
+- font config (fc-something)
 
 Migration List:
 - Browsers
