@@ -10,8 +10,10 @@ SWAY TODO:
 
 THINGS I CAN LEARN:
 conceptual
+- POK stuff, ofc
 - transistors microchips
 - wireless networks, wpa wpsk, wlan...
+- wtf is a socket???
 practical
 - networking architecture, nmcli nmtui iwd wpa_supplicant systemd_resolved
 - font config (fc-something)
