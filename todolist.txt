@@ -1,12 +1,12 @@
 LINUX TODO:
 -dont insta shutdown on power button, just ask
--save power, conf tlp/power-d-daemon
 -if i wanna switch to hyprland, add a battery conservation switch on bar!!:D
 -optimize startup (but systemd-analyze counts the time i take to input words)
 
 SWAY TODO:
+- clipboard and screenshot
 - notif bar
-- fonts
+- session management menu (ctrl alt del)
 
 THINGS I CAN LEARN:
 conceptual
