@@ -4,9 +4,11 @@ LINUX TODO:
 -optimize startup (but systemd-analyze counts the time i take to input words)
 
 SWAY TODO:
+- FLOORP FLATPAK DRAINS SO MUCH BATTERY HOLY SHIT
 - clipboard and screenshot
 - notif bar
 - session management menu (ctrl alt del)
+- again, LUKS auto-decrypt
 
 THINGS I CAN LEARN:
 conceptual
@@ -15,6 +17,7 @@ conceptual
 - wireless networks, wpa wpsk, wlan...
 - wtf is a socket???
 practical
+- review "Learning Linux Layers" in GPT (a curriculum)
 - networking architecture, nmcli nmtui iwd wpa_supplicant systemd_resolved
 - font config (fc-something)
 
