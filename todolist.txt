@@ -1,14 +1,14 @@
 LINUX TODO:
--dont insta shutdown on power button, just ask
--if i wanna switch to hyprland, add a battery conservation switch on bar!!:D
--optimize startup (but systemd-analyze counts the time i take to input words)
+- configure dwarffortress
+- dont insta shutdown on power button, just ask
+- optimize startup (but systemd-analyze counts the time i take to input words)
+- remove the dang plop plop sound
 
 SWAY TODO:
-- FLOORP FLATPAK DRAINS SO MUCH BATTERY HOLY SHIT
-- clipboard and screenshot
+- clipboard
 - notif bar
-- session management menu (ctrl alt del)
-- again, LUKS auto-decrypt
+- session management menu (ctrl alt del) (probably not)
+- swaylock-effects
 
 THINGS I CAN LEARN:
 conceptual
@@ -20,6 +20,8 @@ practical
 - review "Learning Linux Layers" in GPT (a curriculum)
 - networking architecture, nmcli nmtui iwd wpa_supplicant systemd_resolved
 - font config (fc-something)
+- how to use latex
+- curses
 
 Migration List:
 - Browsers
@@ -39,8 +41,8 @@ current=$(cat "$PATH_SYS")
 
 if [ "$current" = "1" ]; then
     echo 0 | sudo tee "$PATH_SYS" > /dev/null
-    notify-send "Battery Conservation" "Disabled"
+    notify-send "Battery Conservation" "Disabled" -t 3000
 else
     echo 1 | sudo tee "$PATH_SYS" > /dev/null
-    notify-send "Battery Conservation" "Enabled (≈60%)"
+    notify-send "Battery Conservation" "Enabled (≈60%)" -t 3000
 fi

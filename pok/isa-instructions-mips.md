@@ -2,8 +2,63 @@
 
 ## ISA
 
-Describes instructions, ...
-> WIP
+Abstraction of the layer between hardware and software.\
+A documentation of hardware, including the possible instructions the hardware can perform.
+
+- Organization of programmable storage.
+- Data types, data structures (encoding and representations)
+- Instruction formats
+- Instruction set (or opcode set)
+- Addressing modes (how accessing and storing is handled)
+- Exceptional conditions (such as specifically handling division by 0)
+
+### Cycle
+- Fetch instruction from memory
+- Decode instruction (as the ISA specifies)l
+- Operand fetch
+- Execute instruction
+- Store result
+- Next!
+
+### What ISA explains here:
+- Instruction format or decoding: how is it decoded?
+- Location of operands and result:
+  - where? in memory? other than memory?
+  - how many explicit operands?
+  - how are memory operands located?
+  - which can or cannot be in memory?
+  - etc
+- Data type and size: floating point? integer?
+- What operations are supported/available?
+
+## Instruction Set
+more primitive.
+
+### Machine Code
+Instructions are represented/encoded in binary and stored as data. 
+
+### Assembly language
+Symbolic version of machine code.
+
+Can also provide pseudo-instructions (another abstraction above the already abstracted binary code), such as move (which is add with 0 into a certain register)\
+
+### CISC, RISC
+#### CISC
+e.g. x86
+
+Single instruction performs complex operation, as smaller program size as memory was premium. (why?)\
+That means:
+- less fetches
+- less instructions, but very big ones.
+- u should search more
+
+#### RISC
+
+Threw away complex instructions, such as multiplication.
+However, by doing so, it requires software to combine simpler operations
+
+Pentium 4 still uses an x86 ISA (???) but uses a RISC (internal). It "forwards" each \
+-> CISC ISA, but internally RISC.
 
 > **microarchitecture** A.K.A computer organization: **a hardware design; the way an ISA is implemented in a particular processor**.
 > defines the way a processor executes instructions, handles data, and performs various operations, all of which are defined by the ISA.
@@ -129,3 +184,6 @@ I-type instruction opcodes:
 ```
 no registers.
 ex: jump.
+
+> Fun fact: MIPS ISA didnt have multiplication, but now it does.
+> the outputs are put into hi and lo registers, instead of the usual $vN (value)
