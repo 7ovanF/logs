@@ -1,5 +1,5 @@
 LINUX TODO:
-- configure dwarffortress
+- configure wine/bottles - LATER
 - dont insta shutdown on power button, just ask
 - optimize startup (but systemd-analyze counts the time i take to input words)
 - remove the dang plop plop sound
@@ -25,9 +25,10 @@ practical
 
 Migration List:
 - Browsers
-  Firefox, Floorp (gradient blue and red), + lynx
+  Firefox, Waterfox (gradient blue and red), + lynx
+
 - Work
-  flatpak codium
+  codium
 +steam
 +inputremapper
 +btop
