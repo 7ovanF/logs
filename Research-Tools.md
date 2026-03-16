@@ -10,13 +10,13 @@
 - arXiv: Bleeding-Edge research papers.
 
 ## 2. Documentations
-- DevDocs
+- DevDocs (oh, it's web/softdev stuff)
+- Arch Wiki, Debian Wiki
+- manpages, tldr command, info pages for tools
 
-## 3. Up-to-date Standards
-NIST. For cybersec too.
-
-## 4. Cyber-Security (when yh)
+## 3. Cyber-Security (when yh)
 - MITRE / MITRE ATT&CK
+- NIST (NIST CSF is a guideline of sorts, regarding best practices and so on)
 
 ## MISC
 - Code examples: github (ye...)
