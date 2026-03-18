@@ -34,4 +34,37 @@ Types of keyslots:
 
 Notes:
 - needs tpm2-tss package
-- if volume is the root partition, initramfs needs tweaking kkkkkkkkkkkkkkkk
+- if volume is the root partition, initramfs needs tweaking. 
+  - can be mkinitcpio (arch) or dracut (most others)
+  - in my case i use dracut.
+
+1. See list
+```
+sudo cryptsetup luksDump /dev/(partitionName)
+```
+
+Or for general "what tokens are enrolled?":
+```
+sudo systemd-cryptenroll /dev/(partitionName)
+```
+
+2. Enroll TPM2 
+```
+sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=(PCRS tokens. ex: 0,2) /dev/(partitionName)
+```
+
+3. Unenroll
+```
+sudo systemd-cryptenroll --wipe-slot=(tokenName. ex: tpm2) /dev/(partitionName)
+```
+
+| PCR | Domain            | Stability     | Typical use    |
+| --- | ----------------- | ------------- | -------------- |
+| 0   | Firmware code     | Stable        | Common         |
+| 1   | Firmware config   | Unstable      | Avoid          |
+| 2   | Option ROMs       | Stable        | Common         |
+| 3   | Vendor-specific   | Unpredictable | Avoid          |
+| 4   | Bootloader        | Moderate      | Optional       |
+| 5   | Kernel/initramfs  | Unstable      | Avoid          |
+| 6   | State transitions | Rare          | Avoid          |
+| 7   | Secure Boot       | Moderate      | Conditional    |
