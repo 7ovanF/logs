@@ -6,7 +6,7 @@ LINUX TODO:
 
 SWAY TODO:
 - clipboard
-- notif bar
+- notif bar (MAKO)
 - session management menu (ctrl alt del) (probably not)
 - swaylock-effects
 
@@ -22,16 +22,6 @@ practical
 - font config (fc-something)
 - how to use latex
 - curses
-
-Migration List:
-- Browsers
-  Firefox, Waterfox (gradient blue and red), + lynx
-
-- Work
-  codium
-+steam
-+inputremapper
-+btop
 
 forgot conserve.sh
 #!/bin/sh
