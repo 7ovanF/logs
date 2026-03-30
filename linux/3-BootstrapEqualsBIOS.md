@@ -1,2 +1,0 @@
-# Bootstrap Program = BIOS/UEFI?
-
