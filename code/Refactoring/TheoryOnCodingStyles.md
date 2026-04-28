@@ -1,14 +1,7 @@
-I'm very unsatisfied with the way I'm programming as I'm oblivious about the ways and mindset of making a maintainable and satisfying code. However, it gets way worse as I'm given implicit suggestions on how to code - incorrectly - by both the current TP and the "muscle" memory built upon previous TPs. I'm saying that these TPs are making me, or us, worse at programming.
-
-One can argue that we're supposed to unlearn things as we get new assignments and those irritating limitations are removed, and that the discomfort we feel as we code these severely un-ideal designs are supposed to give us realizations of what is bad and what is good. I agree. I'm bad at unlearning. But, I argue, there are deep problems within the design of these TPs that are, much more severely, affecting my ability to code:
-- We're given so little time with so many chores to do, how in the fuck are we supposed to unlearn our mistakes? The pressure of completing everything in time takes away the opportunities to reflect upon our code, burning these stupid habits deeper into our bones. Remember that DDP2 isn't our only subject, and we don't have the luxury of being able to work on our code full-time like a working man. 
-- We're told to build a whole RPG game, and because there are so many similar behaviors as our previous, severely limited code, we're implicitly being directed to re-use said terrible code. Even if we had the time to carefully design a new and improved system, I'd say most of the students would take the easy route of re-using the old, bad one; laziness is *probably* not something that an **educational** institute would want in the students they "love and take pride in".
-
-There's a way better route these TPs could take. Give us a way smaller initial program to work on, emphasize more on those occasional additional features, providing us way more space and less pressure, therefore way more opportunities to analyze approaches to solve the problems these additional features introduce. And to solve the mindset of reusing old, similar code, give us much more varying programs than a single recycled idea of an RPG. This would help us dramatically by getting us to think more rather than recycle more.
-
-On a side note, I notice that so far, refactoring has always been side-assignments that give more headache than insights. It's a shame.
-
-That said, it's time to think more about me and my problems. How to program.
+Points I caught:
+- YAGNI (Ye Ain't Gunna Need It)
+  I might be slightly biased towards NOT heeding this, but, this has a very good point especially if the considered-to-be-overengineered component **is not complex at all to start with**. 
+  Personally I'd immediately overengineer if it's slightly complex.
 
 What if there is a coding style, where even if I refactor wildly, little is changed?
 A very uncoupled system?
