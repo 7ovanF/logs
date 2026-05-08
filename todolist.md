@@ -1,13 +1,15 @@
-LINUX TODO:
-- configure wine/bottles - LATER
-- dont insta shutdown on power button, just ask (or suspend)
-- optimize startup (but systemd-analyze counts the time i take to input words)
+rn todo:
 - remove the dang plop plop sound
+- switch to zsh
+- per line delay for fastfetch? > FUCKED, BC FISH
 
-SWAY TODO:
-- CLIPBOARD
-- session management menu (ctrl alt del) (probably not)
+> apparently, said capslock notification NEEDS capslock light
+- add a capslock notification, maybe even "keyboard disconnected"
+- recover capslock light
+
 - swaylock-effects
+
+- get a cooler plymouth theme
 
 THINGS I CAN LEARN:
 conceptual

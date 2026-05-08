@@ -1,3 +1,9 @@
+Principles of Making Tolerable Code:
+1. ENCAPSULATE IT! Everything is refactorable if you encapsulate well. 
+2. ENCAPSULATE IT! Everything is refactorable if you encapsulate well. 
+3. ENCAPSULATE IT! Everything is refactorable if you encapsulate well. 
+4. Done.
+
 Points I caught:
 - YAGNI (Ye Ain't Gunna Need It)
   I might be slightly biased towards NOT heeding this, but, this has a very good point especially if the considered-to-be-overengineered component **is not complex at all to start with**. 
