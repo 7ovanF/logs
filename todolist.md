@@ -1,15 +1,23 @@
 rn todo:
-- remove the dang plop plop sound
-- switch to zsh
+
+post-service:
+- add personal stuff in, like whatsapp web
+
+- how init ssh for zsh
+- plugins to match fish (i also want ctrl c to just clear)
 - per line delay for fastfetch? > FUCKED, BC FISH
 
 > apparently, said capslock notification NEEDS capslock light
 - add a capslock notification, maybe even "keyboard disconnected"
 - recover capslock light
 
-- swaylock-effects
+- modify the XDG or something. the one that manages pop-ups, and also file selection
 
+- Fix sway stutter bug
+
+- why does mpv player not have skipping forward/backward
 - get a cooler plymouth theme
+- swaylock-effects
 
 THINGS I CAN LEARN:
 conceptual
