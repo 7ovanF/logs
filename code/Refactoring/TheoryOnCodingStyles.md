@@ -2,7 +2,8 @@ Principles of Making Tolerable Code:
 1. ENCAPSULATE IT! Everything is refactorable if you encapsulate well. 
 2. ENCAPSULATE IT! Everything is refactorable if you encapsulate well. 
 3. ENCAPSULATE IT! Everything is refactorable if you encapsulate well. 
-4. Done.
+4. Something interesting: if you need a method with operations that are similar to another, see if you can extract that other method, then use the same code.
+5. Done.
 
 Points I caught:
 - YAGNI (Ye Ain't Gunna Need It)
